@@ -1,9 +1,22 @@
-sudo: requiered
-services:
-  - docker
+# sudo: requiered
+# services:
+#   - docker
 
-before_install:
-  - docker build -t litundinu/docker-react -f Dockerfile. dev .
+# before_install:
+#   - docker build -t litundinu/docker-react -f Dockerfile. dev .
 
-script:
-  - docker run -e CI=true litundinu/docker-react npm run test
+# script:
+#   - docker run -e CI=true litundinu/docker-react npm run test
+
+# deploy:
+#   provider: elasticbeanstalk
+#   region: "eu-north-1"
+#   app: "frontend"
+#   env: "Frontend-env"
+#   bucket_name: "elasticbeanstalk-eu-north-1-930900578129"
+#   bucket_path: "frontend"
+#   on:
+#     branch: master
+
+
+# these are configs to deploy via travis ci
